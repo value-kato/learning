@@ -7,8 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
-    @GetMapping("/test2")
+    @GetMapping("/test1")
     public String write1(Model model) {
+        model.addAttribute("message", "hello world!");
+        return "hello";
+    }
+    @GetMapping("/test2")
+    public String write2(Model model) {
         model.addAttribute("message", "hello world2!");
         return "hello";
     }
