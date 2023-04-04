@@ -12,6 +12,6 @@ public class RandamController {
     @GetMapping("/randam")
     public String write(Model model){
         model.addAttribute("message", "hogehoge");
-        return "hello";
+        return "test";
     }
 }
