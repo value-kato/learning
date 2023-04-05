@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-<div th:if="${param}" class="alert alert-info" th:text="${param}"></div>
+
+<p th:text="'値は' + ${param} + 'です'"></p>
+
 </body>
 </html>
