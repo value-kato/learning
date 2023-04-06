@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PublicController2 {
 
     @GetMapping("/public2")
-    public String write(Model model) {
-        model.addAttribute("message", "hello world2!");
+    public String wirte(Model model){
+        model.addAttribute("message" , "Hello World2!");
         return "public2";
     }
+
 
 }
