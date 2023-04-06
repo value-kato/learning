@@ -12,4 +12,9 @@ public class MainController {
         model.addAttribute("message", "hello world!");
         return "hello";
     }
+    @GetMapping("/test2")
+    public String write2(Model model) {
+        model.addAttribute("message", "hello world2!");
+        return "hello";
+    }
 }
